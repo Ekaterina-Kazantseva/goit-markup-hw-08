@@ -1,0 +1,26 @@
+.benefis {
+  display: flex;
+}
+.benefis__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.benefis__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.benefis__item:not(:last-child) {
+  padding-right: 30px;
+}
+.benefis__icon {
+  display: flex;
+  background-color: var(--alternative-background-color);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
