@@ -2,26 +2,32 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  .container {
-    display: flex;
-  }
+  //.container {
+  //display: flex;
+  //}
 }
+
 .footer__logo .accent {
   color: var(--primary-color);
 }
+
 .nav {
   margin-right: 80px;
 }
+
 .list__item-address {
   margin-top: 20px;
   margin-bottom: 9px;
 }
+
 .list__item-nav {
   margin-bottom: 9px;
+
   &:last-child {
     margin-bottom: 0px;
   }
 }
+
 .list__address {
   color: var(--primary-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -29,11 +35,13 @@
   line-height: 1.7;
   font-style: normal;
   text-decoration: none;
+
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
+
 .list__footer-nav {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,6 +49,7 @@
   line-height: 1.7;
   font-style: normal;
   text-decoration: none;
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -57,18 +66,22 @@
   margin-bottom: 20px;
   margin-top: 12px;
 }
+
 .soc-list {
   display: flex;
   list-style: none;
   justify-content: center;
 }
+
 .soc-list__item {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  & + & {
+
+  &+& {
     margin-left: 10px;
   }
 }
+
 .soc-list__link {
   width: 44px;
   height: 44px;
@@ -77,6 +90,7 @@
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -87,10 +101,12 @@
 .soc-list__icon {
   fill: var(--primary-color);
 }
+
 .mailing {
   margin-top: 12px;
   margin-left: 93px;
 }
+
 .mailing__text {
   font-weight: 700;
   font-size: 14px;
@@ -100,6 +116,7 @@
   color: var(--primary-color);
   margin-bottom: 20px;
 }
+
 .mailing__email {
   width: 358px;
   height: 50px;
@@ -110,6 +127,7 @@
   border-radius: 4px;
   color: var(--primary-color);
 }
+
 .mailing__button {
   width: 200px;
   height: 50px;
@@ -126,8 +144,9 @@
   margin-left: 13px;
   cursor: pointer;
 
-  position: absolute;
+  //position: absolute;
 }
+
 .mailing__icon {
   position: relative;
   top: 3px;
