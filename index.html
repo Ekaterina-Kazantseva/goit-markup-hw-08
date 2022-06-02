@@ -41,6 +41,41 @@
                     </svg>
                     +38 096 111 11 11</a>
             </div>
+        <button type="button" class="mob-menu__open-btn">
+            <svg class="header__pic-btn" width="40" height="40">
+                <use href="./images/symbol-defs-opt.svg#menu_24px"></use>
+            </svg>
+        </button>
+        </div>
+        <div class="mob-menu is-hidden no-scroll">
+            <div class="container">
+                <div class="mob-menu-top">
+            <button type="button" class="mob-menu__close-btn">
+                <svg class="mob-menu__pic-btn" width="40" height="40">
+                    <use href="./images/symbol-defs-opt.svg#close_40px"></use>
+                </svg>
+            </button>
+                <ul class="mob-menu__list list">
+                    <li class="mob-menu__item"><a href="./index.html" class="mob-menu__link current ">Студия</a></li>
+                    <li class="mob-menu__item"><a href="./portfolio.html" class="mob-menu__link">Портфолио</a></li>
+                    <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакты</a></li>
+                </ul>
+                </div>
+                <div class="mob-menu__button">
+            <div class="mob-auth-nav">
+                <div class="mob-auth-nav__mob"><a href="tel:+380961111111" class="mob-auth-nav__link mob">
+                    +38 096 111 11 11</a></div>
+                <a href="mailto:info@devstudio.com" class="mob-auth-nav__link mail">
+                    info@devstudio.com</a>
+            </div>
+                <ul class="mob-soc__list list">
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Instagram</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Twitter</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Facebook</a></li>
+                    <li class="mob-soc__item"><a href="" class="mob-soc__link">Linkedin</a></li>
+                </ul>
+        </div>
+        </div>
         </div>
     </header>
     <main>
@@ -107,19 +142,25 @@
                 <ul class="working-list list">
                     <li class="working-list__item">
                         <div class="working-list__wrap">
-                            <img src="./images/box1.jpg" alt="написание кода" width="370" height="274" />
+                            <img 
+                            srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x "
+                            src="./images/box1.jpg" alt="написание кода" width="370" height="274" />
                             <p class="working-list__text">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="working-list__item">
                         <div class="working-list__wrap">
-                            <img src="./images/box2.jpg" alt="оптимизация" width="370" />
+                            <img 
+                            srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x "
+                            src="./images/box2.jpg" alt="оптимизация" width="370" />
                             <p class="working-list__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="working-list__item">
                         <div class="working-list__wrap">
-                            <img src="./images/box3.jpg" alt="дизайн" width="370" />
+                            <img 
+                            srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x "
+                            src="./images/box3.jpg" alt="дизайн" width="370" />
                             <p class="working-list__text">Дизайнерские решения</p>
                         </div>
                     </li>
@@ -132,7 +173,9 @@
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img src="./images/img.jpg" alt="Игорь Демьяненко" width="" />
+                        <img 
+                        srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x "
+                        src="./images/img.jpg" alt="Игорь Демьяненко" width="370" />
                         <div class="team-list__content">
                             <h3 class="team-list__name title">Игорь Демьяненко</h3>
                             <p class="team-list__text">Product Desinger</p>
@@ -171,7 +214,9 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img2.jpg" alt="Ольга Репина" width="" />
+                        <img 
+                        srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x "
+                        src="./images/img2.jpg" alt="Ольга Репина" width="370" />
                         <div class="team-list__content">
                             <h3 class="team-list__name title">Ольга Репина</h3>
                             <p class="team-list__text">Frontend Developer</p>
@@ -210,7 +255,9 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img3.jpg" alt="Николай Тарасов" width="" />
+                        <img 
+                        srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x "
+                        src="./images/img3.jpg" alt="Николай Тарасов" width="370" />
                         <div class="team-list__content">
                             <h3 class="team-list__name title">Николай Тарасов</h3>
                             <p class="team-list__text">Marketing</p>
@@ -249,7 +296,9 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/img4.jpg" alt="Михаил Ермаков" width="" />
+                        <img 
+                        srcset="./images/img4.jpg 1x, ./images/img4-2x.jpg 2x "
+                        src="./images/img4.jpg" alt="Михаил Ермаков" width="370" />
                         <div class="team-list__content">
                             <h3 class="team-list__name title">Михаил Ермаков</h3>
                             <p class="team-list__text">UI Desingner</p>
@@ -456,14 +505,15 @@
                                 <use href="./images/symbol-defs-opt.svg#check"></use>
                             </svg>
                         </span>
-                        Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="modal-field__link">Условия
-                            договора</a></label>
+                        <div class="modal-field__text">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="modal-field__link">Условия
+                            договора</a></div></label>
                 </div>
             </form>
             <button type="submit" class="modal__btn">Отправить</button>
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

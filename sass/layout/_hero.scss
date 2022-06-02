@@ -1,37 +1,95 @@
 .hero {
   background-color: #2f303a;
   text-align: center;
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero-bgimage.jpg);
+      rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bgimage-mob.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
 
+  @media (min-device-pixel-ratio:2),
+  (min-resolution:192dpi),
+  (min-resolution:2dppx) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bgimage-mob-2x.jpg);
+  }
+
+  @media screen and (min-width:768px) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bgimage-tab.jpg);
+
+    @media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx) {
+      background-image: linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bgimage-tab-2x.jpg);
+    }
+  }
+
+
+  @media screen and (min-width:1200px) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bgimage.jpg);
+
+    @media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx) {
+      background-image: linear-gradient(to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bgimage-2x.jpg);
+    }
+  }
+
   .section {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @media screen and (min-width:1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
   }
 }
 
 .hero__title {
   color: var(--primary-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  width: 100%;
+
+  @media screen and (min-width:480px) and (max-width:1199px) {
+    width: 360px;
+  }
+
+
+  @media screen and (min-width:1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 
 .hero__btn {
